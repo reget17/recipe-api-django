@@ -8,13 +8,7 @@ COPY ./app /app
 
 WORKDIR /app
 
-EXPOSE 8000
-
 RUN python -m pip install --upgrade pip && \
     python -m pip install -r /tmp/requirements.txt && \
     rm -rf /tmp
-
-CMD []
-
-
 
