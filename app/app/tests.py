@@ -14,4 +14,9 @@ class CaltTests(SimpleTestCase):
         res = calc.add(5, 6)
 
         self.assertEqual(res, 11)
-        
+
+    def test_subtruct_numbers(self):
+        """Test subtructing numbers."""
+        res  = calc.subtruct(10, 15)
+
+        self.assertEqual(res, 5)
